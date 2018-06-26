@@ -9,6 +9,7 @@ let purple = botconfig.purple;
 
 
 
+});
 
 
 
