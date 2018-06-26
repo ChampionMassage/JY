@@ -7,6 +7,7 @@ let coins = require("./coins.json");
 let xp = require("./xp.json");
 let purple = botconfig.purple;
 
+
 fs.readdir("./commands/", (err, files) => {
 
   if(err) console.log(err);
@@ -21,8 +22,9 @@ fs.readdir("./commands/", (err, files) => {
       let props = require(`./commands/${f}`);
       console.log(`${f} loaded!`);
       bot.commands.set(props.help.name, props);
-
   });
+
+
 
 
 
@@ -120,4 +122,4 @@ let xpAdd = Math.floor(Math.random() * 7) + 8;
 
 });
 
-bot.login(process.env.Token);
+bot.login(botconfig.token);
