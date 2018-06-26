@@ -10,7 +10,6 @@ let purple = botconfig.purple;
 
 
 
-});
 
 
 bot.on("ready", async () => {
