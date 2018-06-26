@@ -122,4 +122,4 @@ let xpAdd = Math.floor(Math.random() * 7) + 8;
 
 });
 
-bot.login(botconfig.token);
+bot.login(process.env.Token);
